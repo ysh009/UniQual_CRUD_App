@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginHorizontal="@dimen/_21sdp"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:text="@string/mainText"
+            android:textSize="@dimen/_21ssp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/secondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:includeFontPadding="false"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/secondText"
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/mainText"
+            app:layout_constraintTop_toBottomOf="@+id/mainText"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="@dimen/_12ssp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/ic_poppins_medium"
+            app:layout_constraintStart_toStartOf="@+id/mainText"
+            app:layout_constraintTop_toBottomOf="@+id/secondText"
+            android:includeFontPadding="false" />
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_rd_gray"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:layout_marginHorizontal="@dimen/_21sdp"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:includeFontPadding="false"
+            android:paddingVertical="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="@dimen/_12ssp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/ic_poppins_medium"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/emailText"
+            android:includeFontPadding="false" />
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_rd_gray"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:layout_marginHorizontal="@dimen/_21sdp"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:includeFontPadding="false"
+            android:paddingVertical="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:importantForAutofill="no"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:minHeight="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@id/passwordText"
+            app:layout_constraintTop_toBottomOf="@id/passwordText"
+            app:layout_constraintBottom_toTopOf="@+id/loginBtn"/>
+
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_rd_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="@string/login"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:layout_marginHorizontal="@dimen/_21sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

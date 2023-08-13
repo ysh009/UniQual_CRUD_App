@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UniQual 2</string>
+    <string name="mainText">Hi, Welcome Back!</string>
+    <string name="secondText">Hello again, You’ve been missed!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="dashtext">Dashboard</string>
+    <string name="logout">LOGOUT</string>
+    <string name="addItem">Add Item</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clCard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_bg_rd_gray"
+    android:layout_marginTop="@dimen/_17sdp">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_183sdp"
+            android:textColor="@color/black"
+            tools:text="Hide and Sick Biscuits small Pck (200gm pck)"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginVertical="@dimen/_19sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="$12"
+            android:fontFamily="@font/ic_poppins_medium"
+            android:textSize="@dimen/_17ssp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvDescription"
+            app:layout_constraintBottom_toBottomOf="@id/tvDescription"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
